@@ -1,0 +1,23 @@
+{
+  "name": "genshin-agent",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "bun src/index.ts",
+    "client": "bun src/client.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@better-auth/drizzle-adapter": "^1.7.18",
+    "better-auth": "^1.7.18",
+    "drizzle-orm": "^0.45.4",
+    "hono": "^4.13.16",
+    "openai": "^7.45.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "drizzle-kit": "^0.31.11",
+    "typescript": "^7.0.2"
+  }
+}
